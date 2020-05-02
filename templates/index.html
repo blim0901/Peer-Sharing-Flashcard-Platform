@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cue &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl.theme.default.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='jquery.fancybox.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-datepicker.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='flaticon.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='aos.css') }}">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo m-0 p-0"><a href="{{ url_for('home') }}" class="mb-0">Cue</a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('coursechoice', course='ComputerScience') }}" class="nav-link">Practice</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a class="site-menu-toggle js-menu-toggle text-white float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    
+    <div class="site-block-wrap">
+    <div class="owl-carousel with-dots">
+      <div class="site-blocks-cover overlay overlay-2" style="background-image: url({{ url_for('static', filename='hero_1.jpg') }});" data-aos="fade" id="home-section">
+
+
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 mt-lg-5 text-center">
+              <h1 class="text-shadow">Study Smarter</h1>
+              <p class="mb-5 text-shadow">Get free access to flash cards created by alumni and peers who have studied the same subjects as you. Many of the flash cards are based on past year paper exam questions. </p>
+              <p><a href="{{ url_for('coursechoice', course='ComputerScience') }}" class="btn btn-primary px-5 py-3">Get Started</a></p>
+              
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>  
+  
+      <div class="site-blocks-cover overlay overlay-2" style="background-image: url({{ url_for('static', filename='hero_2.jpg') }});" data-aos="fade" id="home-section">
+  
+  
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 mt-lg-5 text-center">
+              <h1 class="text-shadow">Quality Control</h1>
+              <p class="mb-5 text-shadow">Every contribution is closely monitored by our Quality Control team to ensure you get the very best.</p>
+              <p><a href="{{ url_for('coursechoice', course='ComputerScience') }}" class="btn btn-primary px-5 py-3">Get Started</a></p>
+              
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>  
+    </div>   
+    
+  </div>      
+
+
+    <section class="py-5 bg-primary site-section how-it-works" id="howitworks-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="section-title mb-3 text-black">How It Works</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="pr-5 first-step">
+              <span class="text-black">01.</span>
+              <h3 class="text-black">Contribute Resources</h3>
+              <p class="text-black">Want to help future batches of students? By contributing your own deck of cue cards, you are benefiting the next few batches.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="pr-5 second-step">
+              <span class="text-black">02.</span>
+              <h3 class="text-dark">Practice Decks</h3>
+              <p class="text-black">Keen to improve your grades? Flash cards are known to promote studying through active recall, which is one of the practices through which our brains learn most effectively.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="pr-5">
+              <span class="text-black">03.</span>
+              <h3 class="text-dark">Suited for You</h3>
+              <p class="text-black">Our flash cards algorithms is adapted from the Leitner system, a widely used method of efficiently memorisation. You get increasing intervals of your most wronged questions, allowing you to learn better in the process.</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+
+
+    <section class="site-section" id="about-section">
+      <div class="container">
+        
+        <div class="row large-gutters">
+          
+          <div class="col-lg-6 ml-auto">
+            
+            <h2 class="section-title mb-3">Supercharge Your Learning</h2>
+                <p class="lead">Not getting better grades even when you are studying more? This might be what you need.</p>
+                <p>Join our community and get to enjoy these benefits</p>
+
+                <ul class="list-unstyled ul-check success">
+                  <li>Get exposed to a variety of exam-styled questions</li>
+                  <li>Have access to peer reviewed quality solutions</li>
+                  <li>Learn better from your mistakes</li>
+                  <li>Study anywhere with flash cards optimised for every device </li>
+                </ul>
+
+                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>We are a cue card sharing platform for university level students. Your submission keep cue going for future batches of students.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-4">
+              <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <form action="#" method="post" class="footer-subscribe">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+                </div>
+              </div>
+            </form>  
+            </div>
+            
+            <div class="">
+              <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            <p class="copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <a href="#top" class="gototop"><span class="icon-angle-double-up"></span></a> 
+
+  <script src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
+  <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery.countdown.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static', filename='aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery.fancybox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery.sticky.js') }}"></script>
+  
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+    
+  </body>
+</html>

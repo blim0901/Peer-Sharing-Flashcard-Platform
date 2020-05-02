@@ -1,0 +1,102 @@
+div.forms {
+    text-align: left;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablecenter {
+    width: 70%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+.success {
+    padding: 20px;
+    background-color: #66ff66; /* Green */
+    color: white;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.progress-bar {
+    width: 1%
+}
+
+#mybar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+
+input.select, button.select {
+    float: right;
+
+}
+
+#container {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#question,
+#answer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#answer {
+    z-index: 10;
+}
+
+.cuecardbuttons {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cuecardwrapper {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: white;
+}
+
